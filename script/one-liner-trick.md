@@ -5,7 +5,15 @@
 > email: jadebetter8092@gmail.com
 >####################
 # date format: year-mounth-day
-```
+```bash
 date +%F
 ```
-
+# traslate lall uppercase letters to lowercase
+```bash
+tr A-Z a-z 
+```
+# count fastq(.gz) reads
+- fastq.gz
+echo $(zcat <fastq.gz> | wc -l)/4 | bc
+- fastq
+echo $(cat <fastq> | wc -l)/4 | bc
